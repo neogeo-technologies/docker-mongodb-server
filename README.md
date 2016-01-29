@@ -1,5 +1,5 @@
 # docker-mongodb-server
-Simple MongoDB server
+Simple MongoDB server container
 
 ## Volumes déclarés :
 - /data/db : stockage des données de MongoDB
