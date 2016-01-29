@@ -1,7 +1,7 @@
 # "ported" by Adam Miller <maxamillion@fedoraproject.org> from
 #   https://github.com/fedora-cloud/Fedora-Dockerfiles
 #
-# adapted by Guillaume Sueur eand Benjamin Chartier
+# adapted by Guillaume Sueur and Benjamin Chartier
 #	http://www.neogeo-online.net
 #
 # Originally written for Fedora-Dockerfiles by
