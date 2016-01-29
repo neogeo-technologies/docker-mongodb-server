@@ -1,0 +1,15 @@
+mongodb_data:
+    image:
+        neogeo/mongodb_client
+    volumes:
+        - /data/db
+        - /data/log
+    command:
+        echo "MongoDB /data/db and data/log"
+mongodb_server:
+    image:
+        neogeo/mongodb_server
+    volumes_from:
+        - mongodb_data
+    ports:
+        - "27017:27017"
