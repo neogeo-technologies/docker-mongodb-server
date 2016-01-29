@@ -16,5 +16,7 @@ Configuration :
 
 
 Originally written for Fedora-Dockerfiles by scollier <scollier@redhat.com>
+
 Ported by Adam Miller <maxamillion@fedoraproject.org> from https://github.com/fedora-cloud/Fedora-Dockerfiles
+
 Adapted by Guillaume Sueur and Benjamin Chartier http://www.neogeo-online.net
