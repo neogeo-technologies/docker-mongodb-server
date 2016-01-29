@@ -26,22 +26,22 @@ Adapted by Guillaume Sueur and Benjamin Chartier http://www.neogeo-online.net
 A simple mongodb client is available in the resources/docker-mongodb-client subdirectory.
 
 
-1. run the volume container :
+- run the volume container :
 ```
 docker run -v /data/db -v /data/log --name mongodb-data neogeo/mongodb-client echo "MongoDB /data/db and data/log"
 ```
 
-2. run the mongodb server container
+- run the mongodb server container using the previously launched data container
 ```
 docker run -d -p 27017:27017 --volumes-from mongodb-data --name mongodb-server neogeo/mongodb-server
 ```
 
-3. run a client container for accessing the data volumes : 
+- run a client container for accessing the data volumes of the data container : 
 ```
 docker run -it --volumes-from mongodb-data --name mongodb-test neogeo/mongodb-client
 ```
 
-4. run a client container for using mongo shell tools :
+- run a client container for using mongo shell tools (linked to the mongodb server container) :
 ```
 docker run -it --name mongodb-client --link mongodb-server:mdbserver neogeo/mongodb-client
 ```
