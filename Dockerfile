@@ -1,4 +1,3 @@
-
 FROM centos:centos7
 MAINTAINER Neogeo Technologies http://www.neogeo-online.net
 
