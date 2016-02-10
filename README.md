@@ -1,17 +1,17 @@
 # docker-mongodb-server
 Simple MongoDB server container
 
-## Volumes déclarés :
-- /data/db : stockage des données de MongoDB
-- /data/log : stockage des logs de MongoDB
+Volumes declared:
+- /data/db: MongoDB db dir
+- /data/log: MongoDB logs dir
 
 ## Configuration :
-- le fichier de configuration utilisé par MongoDB est /etc/mongod.conf
-- le port par défaut est utilisé : 27017
-- aucune limitation sur l'IP du client
-- aucune authentification nécessaire
-- aucun utilisateur déclaré
-- base de données vide (uniquement les bases de données par défaut sont présentes à la création du container)
+- MongoDB conf file: /etc/mongod.conf
+- port : 27017 (the default MongoDB port)
+- trusted environment (not any filter on ip)
+- authentication  not configured
+- no declared users
+- no database
 
 
 ## Credits
