@@ -1,6 +1,6 @@
 mongodb_data:
     image:
-        neogeo/docker-mongodb-client
+        neogeo/mongodb-client
     volumes:
         - /data/db
         - /data/log
@@ -8,7 +8,7 @@ mongodb_data:
         echo "MongoDB /data/db and data/log"
 mongodb_server:
     image:
-        neogeo/docker-mongodb-server
+        neogeo/mongodb
     volumes_from:
         - mongodb_data
     ports:
