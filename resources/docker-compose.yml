@@ -9,6 +9,10 @@ mongodb_data:
 mongodb_server:
     image:
         neogeo/mongodb
+    environment:
+        DATADIR: /data
+        SUPERUSER: neogeo
+        # SUPERPASS: yourpassword (see logs for randomly generated pwd)
     volumes_from:
         - mongodb_data
     ports:
