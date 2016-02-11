@@ -35,7 +35,6 @@ if [ ! -f /data/db/.mongo_admin_created ]; then
 	    sleep 5
     	mongo admin --eval "help" >/dev/null 2>&1
 	    RET=$?
-	    echo RET
 	done
 
 	mongo admin --eval "db.createUser({user: '$SUPERUSER', pwd: '$PASS', roles:[{role:'root',db:'admin'}]});"
